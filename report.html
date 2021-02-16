@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <style>
+        h1 {text-align: center;}
+    </style>
+</head>
+<body>
+    <h1> Programação Web </h1>
+    <h1> ___________________________________________________________________________________ </h1>
+    <h2> 1. Alojamento de página Web na cloud </h2>
+    <h2>__________________________________________ </h2>
+    
+    <h3> Criação de uma página Web </h3>
+    <p> Nesta aula criamos a primeira pagina web.</p>
+    <p> Primeiro criamos o ficheiro '<b>index.html</b>'(codigo fonte).</p>
+    <p> Adicionou-se uma imagem '<b>wordcloud.png</b>' na pasta <i>img</i>.</p>
+    <p> Adicionou-se dois ficheiros '<b>index.php</b>' e '<b>composer.json</b>' para simular o HTML.</p>
+    <h3> Criação de repositório GitHub </h3>
+    <p> Criou-se um <a href="https://github.com/JoaoLima-21906948/pw-lab1">repositorio no git</a> onde foram adicionados os ficheiros anteriomente criados.</p>
+    <h3> Alojamento no Heroku </h3>
+    <p> Criou-se uma conta no Heroku e uma <a href="https://pw-lab-1a21906948.herokuapp.com/">app</a> apartir da ligacao com o repositorio git.</p>
+    <h2>__________________________________________ </h2>
+    <h2> 2. Conhecer a Internet </h2>
+    <h2>__________________________________________ </h2>
+
+    <h3> Endereços IP </h3>
+    <p> Nesta parte da aula obtivemos informações sobre o IP do meu Pc e o IP da servidor do Heroku </p>
+    <p> O IP do meu computador é <b>148.63.83.168</b>.</p>
+    <p> O IP do meu computador está localizado em Lisboa.</p>
+    <img src="img/IPPC.png">
+    <p> O IP do Servidor Heroku é <b>185.1.131.34</b>.</p>
+    <p> O IP do Servidor Heroku está localizado em Frankfurt.</p>
+    <img src="img/IPheroku.png">
+    <h3> Percurso </h3>
+    <p> GeoTraceRoute : </p>
+    <ul>
+        <li>PT - Prior Velho (0 km)</li>
+        <li>PT - Lisbon (8 km)</li>
+        <li>DE - Frankfurt (1879)</li>
+    </ul>
+    <p> Path via : </p>
+    <ul>
+        <li>Path/real distance -1887/1873 km</li>
+        <li>Countries involved: 2</li>
+    </ul>
+    <img src="img/geoTrace.png">
+
+    <h2>__________________________________________ </h2>
+    <h2>3. Acesso via HTTP à minha página Web</h2>
+    <h2>__________________________________________ </h2>
+    <h3> HTTP </h3>
+    <p> Fonte da Pagina : </p>
+    <img src="img/fonte da app.png">
+
+    <h3> Inspect </h3>
+    <p> Foi inspecionada a network da página:</p>
+    <ul>
+        <li>Clicando no Hiperlink são descarregados 37 ficheiros.</li>
+        <li>Na minha Primeira página foram descarregados apenas 2 ficheiros.</li>
+        <li>Ficheiros:</li>
+            <ul>
+                <li>pw-lab-1a21906948.herokuapp.com do tipo document, com o tamanho 1.1 kB e demorou 7.50 s.</li>
+                <li>wordcloud.png do tipo png, com o tamanho 169 B e demorou 66 ms.</li>
+            </ul>
+        <li>Quando selecionamos cada um dos ficheiros, observa-se :</li>
+        <ul>
+            <li>Preview : Mostra o elemento selecionado.</li>
+            <li>Headers : Informação sobre o pedido.</li>
+            <li>Timing  : Informações sobre quanto tempo levou cada estágio a carregar.</li>
+        </ul>
+    </ul>
+    <img src="img/inspect.png">    
+</body>
+</html>
