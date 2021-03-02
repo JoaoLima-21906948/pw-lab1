@@ -30,10 +30,43 @@
     <h3>Quizz :</h3>
     <form>
         <fieldset>
-        <legend>fieldset:</legend>
-        <p>Nome: <input type="text" name="nome"></p>
-        <p>Apelido: <input type="text" name="apelido"></p>
-        <p>Email: <input type="text"name="email"></p>
+        <legend>Identificação:</legend>
+        <p>Nome: <br> <input type="text" id="nome" name="nome" placeholder="insira nome"></p>
+        <p>Apelido: <br> <input type="text" id="apelido" name="apelido" placeholder="insira apelido"></p>
+        <p>Email: <br> <input type="email" id="email" name="email" placeholder="insira email"></p>
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset>
+        <legend>TokyoQuizz:</legend>
+        <p>Tokyo é a capital de que país? <br> <input type="text" name="answer" placeholder="insira a sua resposta"></p>
+        <p>Qual é o número de habitantes estimado em tokyo:</p>
+        <input type="radio" id="9hab" name="9hab" value="9hab">
+        <label for="9hab">9,273 milhões hab</label><br>
+        <input type="radio" id="6hab" name="6hab" value="6hab">
+        <label for="6hab">6,821 milhões hab</label><br>
+        <input type="radio" id="14hab" name="14hab" value="14hab">
+        <label for="14hab">14,573 milhões hab</label>
+        <p>Em que continente é localizado tokyo:</p>
+        <input type="checkbox" id="cont1" name="cont1" value="America">
+        <label for="cont1">America</label><br>
+        <input type="checkbox" id="cont2" name="cont2" value="Europa">
+        <label for="cont2">Europa</label><br>
+        <input type="checkbox" id="cont3" name="cont3" value="Asia">
+        <label for="cont3">Asia</label><br>
+        <p>Que dia é hoje?</p>  
+        <label for="date">Enter a date:</label>
+        <input type="date" id="date" name="date"><br><br>
+        <p>Qual destes monumentos não pertence a tokyo?</p>  
+        <input type="text" id="lname1" name="lname1"><br>
+        <input type="image" src="images/image1.jpg" alt="Submit" width="48" height="48">
+        <input type="text" id="lname2" name="lname2"><br>
+        <input type="image" src="images/image3.jpg" alt="Submit" width="48" height="48">
+        <input type="text" id="lname3" name="lname3"><br>
+        <input type="image" src="images/image2.jpg" alt="Submit" width="48" height="48">
+        <input type="submit" value="Submit">
         </fieldset>
     </form>
         
