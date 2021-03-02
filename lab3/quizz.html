@@ -21,55 +21,57 @@
     <a href="local.html">Localização</a> | 
     <a href="multimedia.html">Multimedia</a> | 
     <a href="info.html">Informação</a> | 
-    <a href="../index.html">Home</a> | 
     <a href="quizz.html"><b>Quizz</b></a> | 
-    <a href="comentarios.html">Comentarios</a>
+    <a href="comentarios.html">Comentarios</a> | 
+    <a href="../index.html">Home</a>
     </p></center>
     <hr>
     <br>
     <h3>Quizz :</h3>
-    <form>
+    <form action="j.lima2001@hotmail.com" method="post">
         <fieldset>
-        <legend>Identificação:</legend>
-        <p>Nome: <br> <input type="text" id="nome" name="nome" placeholder="insira nome"></p>
-        <p>Apelido: <br> <input type="text" id="apelido" name="apelido" placeholder="insira apelido"></p>
-        <p>Email: <br> <input type="email" id="email" name="email" placeholder="insira email"></p>
+        <legend><b>Identificação:</b></legend>
+        <p>Nome: <br> <input type="text" id="nome" name="nome" size="20" maxlength="20" placeholder="insira nome" autofocus required></p>
+        <p>Apelido: <br> <input type="text" id="apelido" name="apelido" size="20" maxlength="20" placeholder="insira apelido" required></p>
+        <p>Email: <br> <input type="email" id="email" name="email" autocomplete="on" placeholder="insira email" required></p>
         <input type="submit" value="Submit">
         </fieldset>
     </form>
     <br>
-    <form>
+    <form oninput="vol1.value = parseInt(vol.value)" action="j.lima2001@hotmail.com" method="post">
         <fieldset>
-        <legend>TokyoQuizz:</legend>
-        <p>Tokyo é a capital de que país? <br> <input type="text" name="answer" placeholder="insira a sua resposta"></p>
-        <p>Qual é o número de habitantes estimado em tokyo:</p>
+        <legend><b>TokyoQuizz:</b></legend>
+        <p><b>1. </b>Tokyo é a capital de que país? <br> <input type="text" name="answer" placeholder="insira a sua resposta"></p>
+        <p><b>2. </b>Qual é o número de habitantes estimado em tokyo:</p>
         <input type="radio" id="9hab" name="9hab" value="9hab">
         <label for="9hab">9,273 milhões hab</label><br>
         <input type="radio" id="6hab" name="6hab" value="6hab">
         <label for="6hab">6,821 milhões hab</label><br>
         <input type="radio" id="14hab" name="14hab" value="14hab">
         <label for="14hab">14,573 milhões hab</label>
-        <p>Em que continente é localizado tokyo:</p>
+        <p><b>3. </b>Em que continente é localizado tokyo:</p>
         <input type="checkbox" id="cont1" name="cont1" value="America">
         <label for="cont1">America</label><br>
         <input type="checkbox" id="cont2" name="cont2" value="Europa">
         <label for="cont2">Europa</label><br>
         <input type="checkbox" id="cont3" name="cont3" value="Asia">
         <label for="cont3">Asia</label><br>
-        <p>Que dia é hoje?</p>  
+        <p><b>4. </b>Que dia é hoje?</p>  
         <label for="date">Enter a date:</label>
         <input type="date" id="date" name="date"><br><br>
-        <p>Qual destes monumentos não pertence a tokyo?</p>  
-        <input type="text" id="lname1" name="lname1"><br>
+        <p><b>5. </b>Qual destes monumentos não pertence a tokyo?</p>  
         <input type="image" src="images/image1.jpg" alt="Submit" width="48" height="48">
-        <input type="text" id="lname2" name="lname2"><br>
-        <input type="image" src="images/image3.jpg" alt="Submit" width="48" height="48">
-        <input type="text" id="lname3" name="lname3"><br>
-        <input type="image" src="images/image2.jpg" alt="Submit" width="48" height="48">
+        <input type="image" src="images/image3.png" alt="Submit" width="48" height="48">
+        <input type="image" src="images/image2.jpg" alt="Submit" width="48" height="48"><br><br>
+        <label for="color"><b>6. </b>Seleciona a cor que achas que representa tokyo:</label><br><br>
+        <input type="color" id="color" name="color" value="#000000"><br><br>
+        <label for="quantity"><b>7. </b>A quantas perguntas achas que acertaste?(entre 0 e 6) </label><br><br>
+        <input type="number" id="quantity" name="quantity" min="0" max="6" placeholder="0-6" step ="1"><br><br>
+        <label for="vol"><b>8. </b>Gostaste deste Quizz? (entre 0 e 10):</label><br><br>
+        <input type="range" id="vol" name="vol" min="0" max="10">
+        <p>Pontuação: <output name="vol1"> 0</output></p><br>
         <input type="submit" value="Submit">
         </fieldset>
     </form>
-        
-    
 </body>
 </html>
