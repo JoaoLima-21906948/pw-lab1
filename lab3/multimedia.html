@@ -27,8 +27,9 @@
     </p></center>
     <hr>
     <h3>Multimedia:</h3>
-    <picture> <a target= "_blank" href="images/image2_grande.jpg"> <img src="images/image2.jpg" alt="Tokyo Skytree"></a> <figcaption> Tokyo Skytree </figcaption> </picture>
-    <picture> <a target= "_blank" href="images/image1_grande.jpg"> <img src="images/image1.jpg" alt="Templo de Asakusa"></a> <figcaption> Templo de Asakusa </figcaption> </picture>
+    <picture> <a href="images/image2_grande.jpg" target="foto"> <img src="images/image2.jpg" alt="Tokyo Skytree"></a> <figcaption> Tokyo Skytree </figcaption> </picture>
+    <picture> <a href="images/image1_grande.jpg" target="foto"> <img src="images/image1.jpg" alt="Templo de Asakusa"></a> <figcaption> Templo de Asakusa </figcaption> </picture>
+    <iframe src="images/image2_grande.jpg" width="800" height="534" frameborder="0" name = "foto"></iframe>
     <br>
     <h3>Youtube Video :</h3>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/n3Dru5y3ROc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -54,5 +55,92 @@
         <input type="reset" value="Reset">
         </fieldset>
     </form>
+    <br> <br>
+    <h3>Desenho em Svg:</h3>
+    <p>Bandeira do Japão (Flag of Japan)</p>
+    <svg width="400" height="150">
+        <rect width="300" height="150" style="fill:rgb(255, 255, 255);stroke-width:3;stroke:rgb(0,0,0)" />
+        <circle cx="150" cy="75" r="50" stroke="white" stroke-width="3" fill="red" />
+    </svg>
+    <br> <br>
+    <h3>Desenho em Svg um editor:</h3>
+    <p>Pokeball</p>
+    <svg width="80%" height="80%" >
+        <path d="M 30 50
+            a 1 1 1 0 1 80 0
+            h-21.5
+            a 1 1 1 0 0 -35 0
+            z"
+            fill="#f00" stroke="#222"
+        ></path>
+        <circle
+            cx="71"
+            cy="50"
+            r="12"
+            fill="#222" stroke="#222"
+        ></circle>
+        <path d="M 30 50
+            a 1 1 1 0 0 80 0
+            h-21.5
+            a 1 1 1 0 1 -35 0
+            z"
+            fill="#fff" stroke="#222"
+        ></path>
+    </svg>
+    <h3>Menu SVG:</h3>
+    <svg height="200" width="230">
+        <g transform="translate(0,15)"> 
+                 <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+                <text width="30">
+                  <textPath xlink:href="#curve" fill ="green" style="font-size:110%">
+                    <a href="info.html">Informação</a>
+                  </textPath>
+                </text>
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 0 15" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.5" to="1" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+          </g> 
+        <g transform="translate(0,15)"> 
+            <text id="TextElement" x="0" y="15" fill ="blue" style="font-size:110%"><a href="index.html">Introdução</a> 
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 0 15" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.5" to="1" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g> 
+          <g transform="translate(0,15)"> 
+            <text id="TextElement" x="111" y="15" fill ="red" style="font-size:130%"><a href="local.html">Localização</a> 
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 0 15" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.5" to="1" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g> 
+          <g transform="translate(0,15)"> 
+            <text id="TextElement" x="50" y="50" fill ="black" style="font-size:130%"><a href="quizz.html">Quizz</a> 
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 0 15" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.5" to="1" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g> 
+          <g transform="translate(0,15)"> 
+            <text id="TextElement" x="0" y="85" fill ="purple" style="font-size:90%"><a href="comentarios.html">Comentarios</a> 
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 0 15" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.5" to="1" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g>
+          <g transform="translate(0,15)"> 
+            <text id="TextElement" x="111" y="130" fill ="orange" style="font-size:100%"><a  href="multimedia.html">Multimedia</a>
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 0 15" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.5" to="1" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g> 
+      </svg>
 </body>
 </html>
