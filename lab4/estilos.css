@@ -4,13 +4,30 @@ body{
     text-align: center;
     width: 800px;
 }
+
+.bandeira{
+    margin-left: 95px;
+}
+
+.pokeball{
+    margin-left: 330px;
+}
+
+body ul{
+    text-align: left;
+    margin-left: 200px;
+}
+body table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body header{
     margin: auto;
     background-color:rgb(119, 117, 117);
     width: 800px;
     padding: 5px;
 }
-  
 
 body main{
     background-color:rgb(228, 169, 169);
