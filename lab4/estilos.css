@@ -1,0 +1,82 @@
+body{
+    margin: auto;
+    background-color:rgb(119, 117, 117);
+    text-align: center;
+    width: 800px;
+}
+body header{
+    margin: auto;
+    background-color:rgb(119, 117, 117);
+    width: 800px;
+    padding: 5px;
+}
+  
+
+body main{
+    background-color:rgb(228, 169, 169);
+    margin: auto;
+    width: 800px;
+}
+
+header ~ main {
+    margin: auto;
+    width: 800px;
+  }
+  
+main + footer {
+    font-size: 34px;
+    margin: auto;
+    width: 800px;
+}
+
+body footer{ 
+    background-color:rgb(119, 117, 117);
+    padding:2px;
+    width: 800px;
+    text-align: right;
+}
+
+body nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:auto;
+    padding:0;
+    text-align:center;
+    background-color: #333;
+    width: 800px;
+}
+
+body nav p{
+    display:inline;
+    color:white;
+}
+body nav a{
+    display:inline-block;
+    padding:10px;
+    color:rgb(255, 255, 255);
+}
+
+body nav p a:hover {
+    background-color: #111;
+  }
+
+body nav p a:link {
+    color: rgb(255, 255, 255);
+}
+  
+body nav p a:visited {
+    color: rgb(228, 169, 169);
+}
+  
+body nav p a:active {
+    color: rgb(255, 255, 255);
+}
+  
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+
