@@ -31,6 +31,25 @@ body table{
     margin-right: auto;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: rgb(243, 198, 198);
+    text-align: center;
+    margin-left: 25%;
+  }
+
+  td, th {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 8px;
+  }
+
+  table caption {
+      padding: 20px;
+  }
+
 body header{
     margin: auto;
     background-color:rgb(119, 117, 117);
