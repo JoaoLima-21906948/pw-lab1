@@ -2,6 +2,7 @@ html{
     background-image: url(images/samu.png);
     height: 100%
 }
+
 body{
     text-align: center;
     width: 800px;
@@ -19,7 +20,7 @@ body{
 }
 
 .pokeball{
-    margin-left: 330px;
+    margin-left: 165px;
 }
 
 body ul{
@@ -54,39 +55,30 @@ table {
 body header{
     margin: auto;
     background-color:rgb(119, 117, 117);
-    width: 800px;
     padding: 5px;
 }
 
 body main{
     background-color:rgb(228, 169, 169);
     margin: auto;
-    width: 800px;
 }
 
 header ~ main {
     margin: auto;
-    width: 800px;
 }
 
 body aside{
     background-color:rgb(228, 169, 169);
     margin: auto;
-    width: 800px;
     font-weight: normal;
-}
-  
-main + footer {
-    margin: auto;
-    width: 800px;
 }
 
 body footer{ 
     background-color:rgb(119, 117, 117);
     padding:2px;
-    width: 800px;
     text-align: right;
     font-weight: bold;
+    margin: auto;
 }
 
 body nav{
@@ -97,7 +89,6 @@ body nav{
     padding:0;
     text-align:center;
     background-color: #333;
-    width: 800px;
 }
 
 body nav p{
@@ -125,12 +116,6 @@ body nav p a:visited {
 body nav p a:active {
     color: rgb(255, 255, 255);
 }
-  
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
 
 #Intro::first-letter {
     color: rgb(0, 0, 0);
@@ -140,6 +125,106 @@ body nav p a:active {
 #Intro::first-line {
     font-weight:bold
 }
+
+.parent {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-column-gap: 5px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 3;}
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 {
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: rgb(228, 169, 169);
+        margin-top: 0;
+        margin-bottom: auto;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+     }
+.div4 { grid-area: 3 / 1 / 4 / 3;}
+
+.line{
+    position: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+
+.wave {
+    float: left;
+    margin: 20px;
+    animation: wave  ease-in-out 0.5s infinite alternate;
+    transform-origin: center -20px;
+  }
   
+  .wave:hover {
+    animation-play-state: paused;
+  }
+  
+  .wave img {
+    border: 5px solid rgb(119, 117, 117);;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+  }
+  
+  .wave figcaption {
+    text-align: center;
+  }
+  
+  .wave:after{
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border: 1.5px solid rgb(119, 117, 117);
+    top: -10px; 
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+  
+  .wave:before{
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    display: block;
+    height: 44px;
+    width: 47px;
+    background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    z-index: 16;
+  }
+
+  .gray {
+    filter: grayscale(1);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+  }
+
+  .gray:hover {
+    filter: none;
+    -webkit-filter: none;
+  }
+  
+  @keyframes wave {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+  }
 
 
