@@ -1,0 +1,87 @@
+html{
+    background-color: rgba(8, 29, 49, 0.63);
+    height: 100%
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    background-color:rgba(153, 184, 189, 0.63);
+}
+
+.vertical-menu {
+    width: 400px;
+}
+
+.vertical-menu a {
+    background-color: rgba(17, 18, 19, 0.63);
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    box-shadow: black 0 2px 5px 0;
+    text-align: center;
+}
+
+.vertical-menu a:hover { background-color: rgb(31, 35, 37); }
+
+.wave {
+    float: left;
+    margin: 20px;
+    animation: wave  ease-in-out 0.5s infinite alternate;
+    transform-origin: center -20px;
+    animation-play-state: paused;
+  }
+  
+  .wave:hover {
+    animation: wave  ease-in-out 0.5s infinite alternate;
+    transform-origin: center -20px;
+  }
+  
+  .wave img {
+    border: 5px solid rgb(255, 255, 255);
+    background-color: rgb(117, 114, 114);
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+  }
+  
+  .wave figcaption {
+    text-align: center;
+  }
+  
+  .wave:after{
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border: 1.5px solid rgb(255, 255, 255);
+    top: -10px; 
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+  
+  .wave:before{
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    display: block;
+    height: 44px;
+    width: 47px;
+    background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    z-index: 16;
+  }
+  
+  @keyframes wave {
+    0% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+  }
